@@ -8,13 +8,13 @@ cask "dispatch" do
   homepage "https://github.com/lakiAlex/dispatch"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
+  depends_on :macos
 
   app "Dispatch SFTP.app"
 
   # Not notarized: remove the quarantine flag so macOS opens it without a warning.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Dispatch SFTP.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Dispatch SFTP.app"]
   end
 
   zap trash: [

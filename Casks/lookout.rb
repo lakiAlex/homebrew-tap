@@ -7,13 +7,13 @@ cask "lookout" do
   desc "Terminal for Claude Code, with files, search, git and an element picker"
   homepage "https://github.com/lakiAlex/lookout"
 
-  depends_on macos: ">= :big_sur"
+  depends_on :macos
 
   app "Lookout.app"
 
   # Not notarized: remove the quarantine flag so macOS opens it without a warning.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Lookout.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Lookout.app"]
   end
 
   zap trash: [

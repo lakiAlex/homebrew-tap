@@ -8,13 +8,13 @@ cask "patchy" do
   homepage "https://github.com/lakiAlex/patchy"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
+  depends_on :macos
 
   app "Patchy.app"
 
   # Not notarized: remove the quarantine flag so macOS opens it without a warning.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Patchy.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Patchy.app"]
   end
 
   zap trash: [
