@@ -1,13 +1,13 @@
 cask "cells" do
-  version "1.1.0"
-  sha256 "398160423d535528d67e0664e9cb5ff1655850cddeade91904bc58daae55baa1"
+  version "1.1.1"
+  sha256 "22c3fcf6f0f77d1c11c5bf4084cee42ac792d16c6cbdfa4ca1950c8ec78bcd41"
 
-  url "https://github.com/lakiAlex/cells/releases/download/v#{version}/Cells_#{version}_aarch64.dmg"
+  url "https://github.com/lakiAlex/cells/releases/download/v#{version}/Cells_#{version}_universal.dmg"
   name "Cells"
   desc "Spreadsheet editor for CSV, Excel and Google Sheets"
   homepage "https://github.com/lakiAlex/cells"
 
-  depends_on arch: :arm64
+  auto_updates true
   depends_on :macos
 
   app "Cells.app"

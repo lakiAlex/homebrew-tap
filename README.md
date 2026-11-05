@@ -21,11 +21,11 @@ The first line is needed once: Homebrew only loads casks from other taps after t
 
 The apps are not signed with an Apple Developer certificate or notarized. The casks remove the quarantine flag after install, so macOS opens them without the "cannot be verified" message.
 
-Lookout runs on Apple Silicon and Intel Macs. Dispatch, Cells and Patchy are built for Apple Silicon.
+All four run on Apple Silicon and Intel Macs. They update themselves from an Update button in their title bar, so the casks have `auto_updates true` and `brew upgrade` leaves them alone unless you pass `--greedy`.
 
 ## Updating a cask
 
-Change `version` and `sha256` in the cask. The checksum of a release download:
+After a release, change `version` and `sha256` in the cask so new installs get the latest version. The checksum of a release download:
 
 ```sh
 curl -sL <dmg url> | shasum -a 256

@@ -1,12 +1,13 @@
 cask "lookout" do
-  version "1.4.0"
-  sha256 "893411c63239d43861acad61cec67e3cb701541de70da52c4d4971a7f6cd8b34"
+  version "1.4.1"
+  sha256 "a741ca9dacdee3f38128a71c9c34c13583c5574d3594e9d485d31f7b11ce2cb9"
 
   url "https://github.com/lakiAlex/lookout/releases/download/v#{version}/Lookout_#{version}_universal.dmg"
   name "Lookout"
   desc "Terminal for Claude Code, with files, search, git and an element picker"
   homepage "https://github.com/lakiAlex/lookout"
 
+  auto_updates true
   depends_on :macos
 
   app "Lookout.app"

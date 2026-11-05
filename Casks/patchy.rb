@@ -1,13 +1,13 @@
 cask "patchy" do
-  version "1.0.0"
-  sha256 "277955fce3cf8f660aba2756d2bf89d913875e65735021d1731ce957034a17d6"
+  version "1.0.1"
+  sha256 "5e965e66f1c48773fd17259a8add533256fe02c45f8cefc6da578fd33ff96715"
 
-  url "https://github.com/lakiAlex/patchy/releases/download/v#{version}/Patchy_#{version}_aarch64.dmg"
+  url "https://github.com/lakiAlex/patchy/releases/download/v#{version}/Patchy_#{version}_universal.dmg"
   name "Patchy"
   desc "Security dashboard for WordPress, PHP, npm, Composer and Ubuntu"
   homepage "https://github.com/lakiAlex/patchy"
 
-  depends_on arch: :arm64
+  auto_updates true
   depends_on :macos
 
   app "Patchy.app"

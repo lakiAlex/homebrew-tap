@@ -1,13 +1,13 @@
 cask "dispatch" do
-  version "1.2.0"
-  sha256 "34b097fc8c1dc79c2dfd48098fbe3da8d9bf41c7c9459dd2222e3400ad4ec532"
+  version "1.2.1"
+  sha256 "e5155eaeda461d16f3c81edf78000384fd41f5093de221ecc4fd2c3ff9b629e5"
 
-  url "https://github.com/lakiAlex/dispatch/releases/download/#{version}/Dispatch-SFTP_#{version}_aarch64.dmg"
+  url "https://github.com/lakiAlex/dispatch/releases/download/v#{version}/Dispatch.SFTP_#{version}_universal.dmg"
   name "Dispatch SFTP"
   desc "SFTP and FTP client with FileZilla and Cyberduck import"
   homepage "https://github.com/lakiAlex/dispatch"
 
-  depends_on arch: :arm64
+  auto_updates true
   depends_on :macos
 
   app "Dispatch SFTP.app"
