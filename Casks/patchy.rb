@@ -1,6 +1,6 @@
 cask "patchy" do
-  version "1.0.1"
-  sha256 "5e965e66f1c48773fd17259a8add533256fe02c45f8cefc6da578fd33ff96715"
+  version "1.0.2"
+  sha256 "2c53413f8539a9ed8f9ada9d108146f5521dfc93d6aa3102b529e532b16d8dd5"
 
   url "https://github.com/lakiAlex/patchy/releases/download/v#{version}/Patchy_#{version}_universal.dmg"
   name "Patchy"
