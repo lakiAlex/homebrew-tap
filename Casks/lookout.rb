@@ -1,6 +1,6 @@
 cask "lookout" do
-  version "1.6.1"
-  sha256 "07d65a73d210cff4d1760160d27d8c1f4b284812bbd184d641bb6ffe7ce94d81"
+  version "1.6.2"
+  sha256 "e01ecb2b205096006759f1ee61147f9d740e5624b7c53419ce50e017aa1c8a5a"
 
   url "https://github.com/lakiAlex/lookout/releases/download/v#{version}/Lookout_#{version}_universal.dmg"
   name "Lookout"
