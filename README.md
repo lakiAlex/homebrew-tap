@@ -25,10 +25,10 @@ All four run on Apple Silicon and Intel Macs. They update themselves from an Upd
 
 ## Updating a cask
 
-Each app repository has a Homebrew workflow that runs when a release is published. It downloads the universal DMG, sets `version` and `sha256` in the cask here and pushes the change. It pushes with a deploy key on this repository, stored as the `TAP_DEPLOY_KEY` secret in each app repository.
+Each app repository has a Homebrew workflow that runs when a release is published. It downloads the universal `.app.tar.gz`, sets `version` and `sha256` in the cask here and pushes the change. It pushes with a deploy key on this repository, stored as the `TAP_DEPLOY_KEY` secret in each app repository.
 
 To redo a cask by hand, run the app's Homebrew workflow from the Actions tab with the release tag, or change the two lines yourself. The checksum of a release download:
 
 ```sh
-curl -sL <dmg url> | shasum -a 256
+curl -sL <app.tar.gz url> | shasum -a 256
 ```

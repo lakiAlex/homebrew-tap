@@ -1,8 +1,8 @@
 cask "lookout" do
   version "1.6.2"
-  sha256 "e01ecb2b205096006759f1ee61147f9d740e5624b7c53419ce50e017aa1c8a5a"
+  sha256 "39b264c384999469fd791950715b70883dd20550c5bb10f39aeae7a44cfbc813"
 
-  url "https://github.com/lakiAlex/lookout/releases/download/v#{version}/Lookout_#{version}_universal.dmg"
+  url "https://github.com/lakiAlex/lookout/releases/download/v#{version}/Lookout_universal.app.tar.gz"
   name "Lookout"
   desc "Terminal for Claude Code, with files, search, git and an element picker"
   homepage "https://github.com/lakiAlex/lookout"

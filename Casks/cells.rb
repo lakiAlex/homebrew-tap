@@ -1,8 +1,8 @@
 cask "cells" do
   version "1.1.2"
-  sha256 "17bfcb71ff464482b5ddac1be55a9b49fc94c5e48b024d5048572f711b476a87"
+  sha256 "bef819f075fcdb4e34a6d7c0ca52d41c9a0bbf2a8170d8ae0ac3252582acbea2"
 
-  url "https://github.com/lakiAlex/cells/releases/download/v#{version}/Cells_#{version}_universal.dmg"
+  url "https://github.com/lakiAlex/cells/releases/download/v#{version}/Cells_universal.app.tar.gz"
   name "Cells"
   desc "Spreadsheet editor for CSV, Excel and Google Sheets"
   homepage "https://github.com/lakiAlex/cells"

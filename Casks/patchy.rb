@@ -1,8 +1,8 @@
 cask "patchy" do
   version "1.0.2"
-  sha256 "2c53413f8539a9ed8f9ada9d108146f5521dfc93d6aa3102b529e532b16d8dd5"
+  sha256 "35e561917bbf505b4f86cec2cb4e98715c11360e3822e188f1bd079a3ad9f8ec"
 
-  url "https://github.com/lakiAlex/patchy/releases/download/v#{version}/Patchy_#{version}_universal.dmg"
+  url "https://github.com/lakiAlex/patchy/releases/download/v#{version}/Patchy_universal.app.tar.gz"
   name "Patchy"
   desc "Security dashboard for WordPress, PHP, npm, Composer and Ubuntu"
   homepage "https://github.com/lakiAlex/patchy"
