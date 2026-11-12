@@ -1,6 +1,6 @@
 cask "dispatch" do
-  version "1.2.3"
-  sha256 "3389aa360fdf9cd8df20fe042bc8a242e12c9051ef656644db6af896c05056c9"
+  version "1.2.4"
+  sha256 "a3efa03a8322638ace699594c6b9677e5f823e6d3ca6e63f0e1a7bd5777177fa"
 
   url "https://github.com/lakiAlex/dispatch/releases/download/v#{version}/Dispatch.SFTP_universal.app.tar.gz"
   name "Dispatch SFTP"
