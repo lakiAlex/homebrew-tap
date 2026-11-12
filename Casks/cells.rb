@@ -1,6 +1,6 @@
 cask "cells" do
-  version "1.1.1"
-  sha256 "22c3fcf6f0f77d1c11c5bf4084cee42ac792d16c6cbdfa4ca1950c8ec78bcd41"
+  version "1.1.2"
+  sha256 "17bfcb71ff464482b5ddac1be55a9b49fc94c5e48b024d5048572f711b476a87"
 
   url "https://github.com/lakiAlex/cells/releases/download/v#{version}/Cells_#{version}_universal.dmg"
   name "Cells"
