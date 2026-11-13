@@ -1,6 +1,6 @@
 cask "patchy" do
-  version "1.0.4"
-  sha256 "737353cf3dbd764bb9012bf99d98e3995a37dcef8c93d1cbf153d86fbff53ac2"
+  version "1.0.5"
+  sha256 "d117491124b162db39959757f9099a7d0519b4db0cd295c499c31d9d3ad6f2d4"
 
   url "https://github.com/lakiAlex/patchy/releases/download/v#{version}/Patchy_universal.app.tar.gz"
   name "Patchy"
